@@ -11,7 +11,7 @@
     <div class="main";>
                 <h1>Login</h1>
                 <h3>Enter your login credentials</h3>
-                <form action="emp.html" name="myForm" onsubmit="return validateForm()" method="post">
+                <form action="emp.html" name="myForm" method="post"><!-- onsubmit="return validateForm()" -->
                       <label for="first">
                             Username:
                       </label>
@@ -30,7 +30,7 @@
     
                       <div class="wrap">
                             <button type="submit"
-                                    onclick="solve()" value="Submit">
+                                    onclick="solve()" value="Submit" href="emp.html">
                                   Login
                             </button>
                       </div>
@@ -43,6 +43,7 @@
                 </p>
           </div>
         </div>
+    <!--
 <script>
 function validateform(){  
 var name=document.myForm.name.value;  
@@ -56,5 +57,6 @@ if (name==null || name=="deva"){
   }  
 }  
 </script>
+    -->
 </body>
 </html>
