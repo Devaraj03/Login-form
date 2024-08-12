@@ -30,7 +30,7 @@
                       
                       <div class="wrap">
                             <button type="submit"
-                                    onclick="validateform()" value="Submit" href="emp.html">
+                                    onclick="solve()" value="Submit" href="emp.html">
                                   Login
                             </button>
                       </div>
@@ -48,13 +48,13 @@ function validateform(){
 var name=document.myForm.name.value;  
 var password=document.myForm.password.value;  
 if (name=="deva" && password.length<6 ){  
-  alert("succesfull");
-  window.location.assign("emp.htnl");
-}else{  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password=="12345"){  
   alert("Password must be at least 6 characters long.");  
   return false;  
   }  
-}  
+} 
 </script>
 </body>
 </html>
