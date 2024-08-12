@@ -11,7 +11,7 @@
     <div class="main";>
                 <h1>Login</h1>
                 <h3>Enter your login credentials</h3>
-                <form action="/Login-form/emp.html" name="myForm" onsubmit="return validateForm()" method="post">
+                <form action="emp.html" name="myForm" onsubmit="return validateForm()" method="post">
                       <label for="first">
                             Username:
                       </label>
@@ -29,12 +29,10 @@
                              placeholder="Enter your Password" required>
     
                       <div class="wrap">
-                        <a href="emp.html">
                             <button type="submit"
-                                    onclick="solve()" value="Submit" href="emp.html">
+                                    onclick="solve()" value="Submit">
                                   Login
                             </button>
-                        </a>
                       </div>
                 </form>
                 <p>
@@ -52,7 +50,7 @@ var password=document.myForm.password.value;
 if (name==null || name=="deva"){  
   alert("Name can't be blank");  
   return false;  
-}else if(password="12345"){  
+}else if(password.length<6){  
   alert("Password must be at least 6 characters long.");  
   return false;  
   }  
