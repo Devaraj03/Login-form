@@ -11,7 +11,7 @@
     <div class="main";>
                 <h1>Login</h1>
                 <h3>Enter your login credentials</h3>
-                <form action="/Login-form/emp.html" name="myForm" onsubmit="return validateForm()"  method="post" >
+                <form action="emp.html" name="myForm" onsubmit="return validateForm()"  method="post" >
                       <label for="first">
                             Username:
                       </label>
@@ -47,10 +47,9 @@
 function validateform(){  
 var name=document.myForm.name.value;  
 var password=document.myForm.password.value;  
-if (name=="deva" && password.length<6){  
+if (name=="deva" && password.length<6 ){  
   alert("succesfull");
   window.location.assign("emp.htnl");
-    
 }else{  
   alert("Password must be at least 6 characters long.");  
   return false;  
