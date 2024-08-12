@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Login Form</title>
+    <link rel="stylesheet" href="doc.css">
+</head>
+<body style="background-color: rgb(51, 50, 50);" class="bg-img">
+    <div style="padding-top: 40px;padding-bottom: 20px;">
+    <div class="main";>
+                <h1>Login</h1>
+                <h3>Enter your login credentials</h3>
+                <form action="emp.html" name="myForm" onsubmit="return validateForm()" method="post">
+                      <label for="first">
+                            Username:
+                      </label>
+                      <input type="text" 
+                             id="first" 
+                             name="fname" 
+                             placeholder="Enter your Username" required>
+    
+                      <label for="password">
+                            Password:
+                      </label>
+                      <input type="password"
+                             id="password" 
+                             name="password"
+                             placeholder="Enter your Password" required>
+    
+                      <div class="wrap">
+                        <a href="emp.html">
+                            <button type="submit"
+                                    onclick="solve()" value="Submit" href="Untitle.html">
+                                  Login
+                            </button>
+                        </a>
+                      </div>
+                </form>
+                <p>
+                      <a href="fpass.html"
+                         style="text-decoration: none;">
+                            forgot password?
+                      </a>
+                </p>
+          </div>
+        </div>
+<script>
+function validateform(){  
+var name=document.myForm.name.value;  
+var password=document.myForm.password.value;  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
+</body>
+</html>
